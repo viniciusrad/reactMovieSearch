@@ -7,11 +7,11 @@ class Main extends React.Component {
         return ( 
             <div className = "container" >
            
-            <h1 className = "title" > Buscador de filmes< /h1> 
-            <SearchMovies / >
+            <h1 className = "title" > Buscador de filmes</h1> 
+            <SearchMovies/>
             </div>
         );
     }
 }
 
-ReactDOM.render( < Main / > , document.getElementById('root'));
+ReactDOM.render( < Main/> , document.getElementById('root'));
