@@ -63,7 +63,7 @@ export default function SearchMovies() {
           ))}
       </div>
       <p className="info">
-        Desenvolvido por Vinicius Ribeiro, utilizando react e a api fech do
+        Desenvolvido por Vinicius Ribeiro, utilizando react e a api fetch do
         javascript
       </p>
     </>
