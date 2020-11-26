@@ -66,7 +66,6 @@ export default function SearchMovies() {
         Desenvolvido por Vinicius Ribeiro, utilizando react e a api fech do
         javascript
       </p>
-      <p className="info">Hosting fornecido pela plataforma fleek</p>
     </>
   );
 }
