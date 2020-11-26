@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 
 export default function SearchMovies() {
-  //states- input query, movies
+  //states-> input query, movies
   const [query, setQuery] = useState("");
-  //create the state for movies, and update that state appropriate
+  //Cria o estado e atualiza o estado
   const [movies, setMovies] = useState([]);
 
   const searchMovies = async (e) => {

@@ -7,7 +7,7 @@ class Main extends React.Component {
         return ( <
             div className = "container" >
             <
-            h1 className = "title" > Busca de filmes, React < /h1>   <
+            h1 className = "title" > Busca de filmes com React < /h1>   <
             SearchMovies / >
             <
             /div>
