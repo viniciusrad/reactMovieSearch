@@ -98,3 +98,9 @@ small {
     margin: 0 auto;
     display: block
 }
+
+.info{
+    font-size: 1.4rem;
+    text-align: center
+    
+}

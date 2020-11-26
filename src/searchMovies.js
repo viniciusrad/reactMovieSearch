@@ -25,9 +25,8 @@ export default function SearchMovies() {
     <>
       <form className="form" onSubmit={searchMovies}>
         <label className="label" htmlFor="query">
-          {" "}
-          Nome do filme{" "}
-        </label>{" "}
+          Nome do filme
+        </label>
         <input
           className="input"
           type="text"
@@ -35,14 +34,12 @@ export default function SearchMovies() {
           placeholder="ex. Jurassic Park"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-        />{" "}
+        />
         <button className="button" type="submit">
-          {" "}
-          Buscar{" "}
-        </button>{" "}
-      </form>{" "}
+          Buscar
+        </button>
+      </form>
       <div className="card-list">
-        {" "}
         {movies
           .filter((movie) => movie.poster_path)
           .map((movie) => (
@@ -51,22 +48,25 @@ export default function SearchMovies() {
                 className="card--image"
                 src={`https://image.tmdb.org/t/p/w185_and_h278_bestv2/${movie.poster_path}`}
                 alt={movie.title + " poster"}
-              />{" "}
+              />
               <div className="card--content">
-                <h3 className="card--title"> {movie.title} </h3>{" "}
+                <h3 className="card--title"> {movie.title} </h3>
                 <p>
-                  {" "}
-                  <small> RELEASE DATE: {movie.release_date} </small>{" "}
-                </p>{" "}
+                  <small> RELEASE DATE: {movie.release_date} </small>
+                </p>
                 <p>
-                  {" "}
-                  <small> RATING: {movie.vote_average} </small>{" "}
-                </p>{" "}
-                <p className="card--desc"> {movie.overview} </p>{" "}
-              </div>{" "}
+                  <small> RATING: {movie.vote_average} </small>
+                </p>
+                <p className="card--desc"> {movie.overview} </p>
+              </div>
             </div>
-          ))}{" "}
-      </div>{" "}
+          ))}
+      </div>
+      <p className="info">
+        Desenvolvido por vinicius ribeiro, utilizando react e a api fech do
+        javascript
+      </p>
+      <p className="info">Hosting fornecido pela plataforma fleek</p>
     </>
   );
 }

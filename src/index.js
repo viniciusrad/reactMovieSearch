@@ -4,13 +4,12 @@ import SearchMovies from "./searchMovies";
 
 class Main extends React.Component {
     render() {
-        return ( <
-            div className = "container" >
-            <
-            h1 className = "title" > Busca de filmes com React < /h1>   <
-            SearchMovies / >
-            <
-            /div>
+        return ( 
+            <div className = "container" >
+           
+            <h1 className = "title" > Busca de filmes com React < /h1> 
+            <SearchMovies / >
+            </div>
         );
     }
 }
